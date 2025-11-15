@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="card">
+    <div class="card-body">
+      <h3>Booking Confirmed</h3>
+      <p>
+        Thank you <strong>{{ booking.name }}</strong>!  
+        Your booking for <strong>{{ destination.name }}</strong>  
+        on <strong>{{ booking.date }}</strong> has been received.
+      </p>
+
+      <a href="{{ url_for('index') }}" class="btn btn-primary">Back to Home</a>
+    </div>
+  </div>
+{% endblock %}
